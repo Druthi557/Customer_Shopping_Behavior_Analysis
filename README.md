@@ -89,14 +89,14 @@ Insert dashboard screenshot:
 ---
 
 ## 📈 Key Results & Insights
-
-- **Top revenue category:** Clothing accounted for the highest share of total purchases
-- **Gender split:** Female customers drove slightly higher average order values
-- **Age group:** The 25–35 age group contributed the most to overall revenue
-- **Ratings:** Products with ratings above 4.0 had 30%+ higher repeat purchase rates
-- **Payment preference:** Credit card was the most used payment method across all segments
-
-> *(Update these with your actual findings)*
+Gender revenue gap: Male customers generated ~157,890 in total revenue vs. ~75,191 from female customers — nearly double, indicating a significant gender skew in spend that could inform targeted marketing allocation.
+Customer loyalty distribution: Using a CTE-based segmentation (New / Returning / Loyal by purchase history), ~80% of the customer base (3,116 of ~3,900 customers) falls into the "Loyal" tier, with only 83 New customers — suggesting strong retention but a potential gap in new customer acquisition.
+Subscription status is not a proxy for loyalty: Average spend was nearly identical between subscribers (59.49) and non-subscribers (59.87). Even among repeat buyers (5+ previous purchases), non-subscribers outnumbered subscribers ~2.6:1 (2,518 vs. 958) — indicating the subscription program may be under-promoted relative to actual customer loyalty.
+Top-rated products: Gloves, Sandals, Boots, Hat, and Handbag led average review ratings, all tightly clustered between 3.78–3.86 — no single runaway product, suggesting rating alone isn't a strong differentiator without pairing it with volume.
+Discount usage: Hat (50%), Sneakers (49.7%), Coat (49.1%), Sweater (48.2%), and Pants (47.4%) had the highest share of discounted purchases — consistently high across varied product types, not isolated to one category.
+Shipping type and spend: Average purchase amount was nearly identical between Express (60.48) and Standard (58.46) shipping — shipping preference showed little correlation with basket size.
+Age group revenue: Fairly evenly distributed across Young-Adult (62,143), Middle-Aged (59,197), Adult (55,978), and Senior (55,763) — no single age group dominates, making age a weaker lever for targeting compared to gender or subscription behavior.
+Top products by category: Identified top 3 best-selling products within each category (Accessories, Clothing, Footwear, Outerwear) using ROW_NUMBER() with PARTITION BY — noted that tied order counts were assigned distinct ranks due to ROW_NUMBER's behavior, a case where RANK()/DENSE_RANK() would better preserve ties
 
 ---
 
